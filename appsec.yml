@@ -1,15 +1,11 @@
 ersion: 0.0
 os: linux
 files:
-  - source: index.php
+  - source: index.html
     destination: /var/www/html
-  - source: index-error.php
-    destination: /var/www/html
-  - source: images
-    destination: /var/www/html/images
 permissions:
   - object: /var/www/html
-    pattern: "*.php"
+    pattern: "*.html"
     owner: apache
     group: apache
     mode: 775
